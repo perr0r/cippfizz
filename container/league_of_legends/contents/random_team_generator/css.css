@@ -1,0 +1,61 @@
+.mode {
+    font-family: "cookierun";
+    padding: 10px;
+    font-size: 25px;
+    color: #4444cc;
+    margin: 10px;
+    width: 500px;
+} #mode1, #mode2, #mode3, #mode4, #mode5 {
+    display: none;
+} .txt {
+    font-family: "nexon1";
+    font-size: 50px;
+} .back {
+    height: 50px;
+    width: 75px;
+}
+
+.names4, .names5 {
+    font-family: "nexon1";
+    font-size: 25px;
+}
+
+.name1, .name2, .name3, .name4, .name5{
+    font-family: "nexon1";
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+} #gen1, #gen2, #gen3, #gen4, #gen5 {
+    width: 208px;
+    height: 50px;
+    margin-bottom: 10px;
+} #result1 {
+    font-family: "nexon1";
+    width: 1000px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+} #result2, #result3 {
+    font-family: "nexon1";
+    width: 1000px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding-top: 33px;
+    font-size: 25px;
+    text-align: center;
+} #result4, #result5 {
+    font-family: "nexon1";
+    width: 400px;
+    height: 210px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+} #result1, #result2, #result3, #result4, #result5 {
+    resize: none;
+}

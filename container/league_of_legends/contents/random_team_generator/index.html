@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../../src/all.css">
+    <link rel="stylesheet" href="css.css">
+    <title>씹덕하는 피즈</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../../src/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../../src/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../../src/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../../src/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../../src/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../../src/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../../src/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../../src/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../src/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../../../src/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../../src/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../../../src/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../../../src/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div id="bar">
+        <a href="https://cippfizz.kro.kr">
+            <img id="logo" src="../../../../src/cippfizz.png"/>
+        </a>
+        <ul class="menu">
+            <li>
+                자료실
+                <ul class="submenu">
+                    <li>
+                        <a href="../../../../container/league_of_legends">리그 오브 레전드</a>
+                    </li>
+                    <li>
+                        <a href="../../../../container/maplestory">메이플스토리</a>
+                    </li>
+                    <li>
+                        <a href="../../../../container/clashroyale">클래시로얄</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="bbar">
+    </div>
+    <br><br><br>
+    <center>
+        <div id="box">
+            <input class="mode" type="button" value="무작위 라인 배정"/><br>
+            <input class="mode" type="button" value="무작위 팀 생성"/><br>
+            <input class="mode" type="button" value="무작위 팀 생성 후 무작위 라인 배정"/><br>
+            <input class="mode" type="button" value="맞라이너 고정 후 무작위 팀 생성"/><br>
+            <input class="mode" type="button" value="맞라이너, 라인 고정 후 무작위 팀 생성"/>
+        </div>
+
+        <!-- mode1 -->
+        <div id="mode1">
+            <div class="txt">
+                무작위 라인 배정<br><br>
+            </div>
+            <div class="names1">
+                <input class="name1" type="text"/><br>
+                <input class="name1" type="text"/><br>
+                <input class="name1" type="text"/><br>
+                <input class="name1" type="text"/><br>
+                <input class="name1" type="text"/><br>
+                <input id="gen1" type="button" value="생성"/>
+                <input class="back" type="button" value="뒤로가기"/>    
+            </div>
+            <input id="result1" type="text" readonly/>
+        </div>
+
+        <!-- mode2 -->
+        <div id="mode2">
+            <div class="txt">
+                무작위 팀 생성<br><br>
+            </div>
+            <div class="names2">
+                <input class="name2" type="text"/>
+                <input class="name2" type="text"/><br>
+                <input class="name2" type="text"/>
+                <input class="name2" type="text"/><br>
+                <input class="name2" type="text"/>
+                <input class="name2" type="text"/><br>
+                <input class="name2" type="text"/>
+                <input class="name2" type="text"/><br>
+                <input class="name2" type="text"/>
+                <input class="name2" type="text"/><br>
+                <input id="gen2" type="button" value="생성"/>
+                <input class="back" type="button" value="뒤로가기"/>
+            </div>
+            <textarea id="result2" readonly></textarea>
+        </div>
+
+        <!-- mode3 -->
+        <div id="mode3">
+            <div class="txt">
+                무작위 팀 생성 후 무작위 라인 배정<br><br>
+            </div>
+            <div class="names3">
+                <input class="name3" type="text"/>
+                <input class="name3" type="text"/><br>
+                <input class="name3" type="text"/>
+                <input class="name3" type="text"/><br>
+                <input class="name3" type="text"/>
+                <input class="name3" type="text"/><br>
+                <input class="name3" type="text"/>
+                <input class="name3" type="text"/><br>
+                <input class="name3" type="text"/>
+                <input class="name3" type="text"/><br>
+                <input id="gen3" type="button" value="생성"/>
+                <input class="back" type="button" value="뒤로가기"/>
+            </div>
+            <textarea id="result3" readonly></textarea>
+        </div>
+
+        <!-- mode4 -->
+        <div id="mode4">
+            <div class="txt">
+                맞라이너 고정 후 무작위 팀 생성<br><br>
+            </div>
+            <div class="names4">
+                <input class="name4" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name4" type="text"/><br>
+                <input class="name4" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name4" type="text"/><br>
+                <input class="name4" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name4" type="text"/><br>
+                <input class="name4" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name4" type="text"/><br>
+                <input class="name4" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name4" type="text"/><br>
+                <input id="gen4" type="button" value="생성"/>
+                <input class="back" type="button" value="뒤로가기"/>
+            </div>
+            <textarea id="result4" readonly></textarea>
+        </div>
+
+        <!-- mode5 -->
+        <div id="mode5">
+            <div class="txt">
+                맞라이너 고정 후 무작위 팀 생성<br><br>
+            </div>
+            <div class="names5">
+                　탑&nbsp;<input class="name5" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name5" type="text"/><br>
+                정글&nbsp;<input class="name5" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name5" type="text"/><br>
+                미드&nbsp;<input class="name5" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name5" type="text"/><br>
+                원딜&nbsp;<input class="name5" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name5" type="text"/><br>
+                서폿&nbsp;<input class="name5" type="text"/>&nbsp;&nbsp;vs&nbsp;
+                <input class="name5" type="text"/><br>
+                <input id="gen5" type="button" value="생성"/>
+                <input class="back" type="button" value="뒤로가기"/>
+            </div>
+            <textarea id="result5" readonly></textarea>
+        </div>
+
+    </center>
+    <br><br><br>
+    <div id="last">
+        <div id="last1">Copyright 2022. 씹덕하는 피즈 all rights reserved.&nbsp; 8skb60@gmail.com</div>
+        <a href="https://www.youtube.com/channel/UC40i8mZqaD-uI-q4g4qztow">
+            <img id="last2" src="../../../../src/youtube_logo.png"/>
+        </a>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../src/all.js"></script>
+<script type="text/javascript" src="js.js"></script>
+
+</html>

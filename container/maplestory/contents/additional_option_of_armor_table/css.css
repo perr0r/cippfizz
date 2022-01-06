@@ -1,0 +1,12 @@
+.add {
+    font-family: "maple";
+    background-color: #ffffff;
+} .add tr {
+    background-color: #000000;
+} .add td {
+    padding: 10px;
+    text-align: center;
+} center a {
+    font-family: "maple";
+    color: #44cccc;
+}

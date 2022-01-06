@@ -1,0 +1,24 @@
+.tab {
+    font-family: "maple";
+    background-color: #ffffff;
+} .tab tr {
+    background-color: #000000;
+} .tab td {
+    padding: 10px;
+    text-align: center;
+} center a {
+    font-family: "maple";
+    color: #44cccc;
+}
+
+#ex {
+    width: 750px;
+}
+
+.input {
+    text-align: center;
+} #calc {
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
